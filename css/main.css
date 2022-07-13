@@ -26,8 +26,21 @@ body {
     padding-left: calc( (100% - var(--container-width)) / 2 + var(--container-padding) );
 }
 
-.block {
-    height: 200px;
-    background-color: aqua;
+
+.header {
+    min-height: 940px;
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+    position: relative;
+}
+.header:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 96px;
+
+    background-image: url('./../img/header/header-bottom.svg');
+    background-size: 100%;
 }
 
