@@ -1,4 +1,4 @@
-@import './normalize.css';
+@import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 :root {
@@ -21,5 +21,13 @@ body {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 var(--container-padding);
+}
+.container-right {
+    padding-left: calc( (100% - var(--container-width)) / 2 + var(--container-padding) );
+}
+
+.block {
+    height: 200px;
+    background-color: aqua;
 }
 
